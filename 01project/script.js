@@ -1,9 +1,15 @@
 
-const list=[2,3,5,6,7,9];
 
-let alfa=[];
+let isTodoEditable= false;
 
-const f=list.map((a)=>a+1
-)
+const test= () => {
+    isTodoEditable= !isTodoEditable;
+    return (
+        isTodoEditable ? "isTrue" : "isFalse"
 
-console.log(list);
+        )
+}
+
+for (let i = 0; i < 4; i++) {
+    console.log(test());
+}
