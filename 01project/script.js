@@ -1,15 +1,13 @@
 
+const list=[2,3,4,5,6,7,8,9,10,11];
 
-let isTodoEditable= false;
+// const a= list.map(((num)=> num==3 ? num*num : num))
+// const b= list.filter(((num)=> num!=3))
+console.log(list);
 
-const test= () => {
-    isTodoEditable= !isTodoEditable;
-    return (
-        isTodoEditable ? "isTrue" : "isFalse"
+const c = list.forEach(((num, intex, arr)=> arr[intex]=num*3 ))
 
-        )
-}
+// const d = list.map((num1)=> num1==4 ? true : false)
 
-for (let i = 0; i < 4; i++) {
-    console.log(test());
-}
+const b= list.filter(((num)=> num!==6))
+console.log(b);
