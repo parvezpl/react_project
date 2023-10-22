@@ -1,13 +1,21 @@
+const list =[1,2,3,4,5]
 
-const list=[2,3,4,5,6,7,8,9,10,11];
+const numb=[1,3, 8]
 
-// const a= list.map(((num)=> num==3 ? num*num : num))
-// const b= list.filter(((num)=> num!=3))
-console.log(list);
+let imp=[];
 
-const c = list.forEach(((num, intex, arr)=> arr[intex]=num*3 ))
+// numb.map((num)=>list.filter(num))
 
-// const d = list.map((num1)=> num1==4 ? true : false)
+const d =list.filter((num)=>numb.includes(num))
 
-const b= list.filter(((num)=> num!==6))
+
+const a = list.filter((n)=>n==1)
+const b = list.map((n)=>n==numb.filter((nn)=>nn==n) ? imp.push() : 0)
+const c = list.find((n)=>n==5)
+
+
+console.log(a);
 console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);
